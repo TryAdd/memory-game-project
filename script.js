@@ -13,18 +13,18 @@ let secondCard = false;
 
 //Items array
 const items = [
-  { name: "4rh", image: "img/4rh.png" },
-  { name: "banana", image: "img/banana.png" },
-  { name: "cuctus", image: "img/cuctus.png" },
-  { name: "dragon", image: "img/dragon.png" },
-  { name: "limon", image: "img/limon.png" },
-  { name: "frawlh", image: "img/frawlh.png" },
-  { name: "idk", image: "img/idk.png" },
-  { name: "mango", image: "img/mango.png" },
-  { name: "tot", image: "img/tot.png" },
-  { name: "dragonfruit", image: "img/dragonfruit.png" },
-  { name: "popcorn", image: "img/popcorn.png" },
-  { name: "jwafa", image: "img/jwafa.png" },
+  { name: "4rh", image: "./img/4rh.png" },
+  { name: "banana", image: "./img/banana.png" },
+  { name: "cuctus", image: "./img/cuctus.png" },
+  { name: "dragon", image: "./img/dragon.png" },
+  { name: "limon", image: "./img/limon.png" },
+  { name: "frawlh", image: "./img/frawlh.png" },
+  { name: "idk", image: "./img/idk.png" },
+  { name: "mango", image: "./img/mango.png" },
+  { name: "tot", image: "./img/tot.png" },
+  { name: "dragonfruit", image: "./img/dragonfruit.png" },
+  { name: "popcorn", image: "./img/popcorn.png" },
+  { name: "jwafa", image: "./img/jwafa.png" },
 ];
 
 //Initial Time
@@ -82,6 +82,8 @@ const mGenerater = (cardValues, size = 4) => {
   cardValues = [...cardValues, ...cardValues];
   // dh 3shan y9er generate llcards
   cardValues.sort(() => Math.random() - 0.5);
+
+  // dh 3shan 3lamt astfham
   for (let i = 0; i < size * size; i++) {
     gameContainer.innerHTML += `
      <div class="card-container" data-card-value="${cardValues[i].name}">
